@@ -16,6 +16,16 @@ export class USDT {
     };
   }
 
+  public static POLYGON() {
+    return {
+      chainId: ChainId.MAINNET,
+      contractAddress: '0xc2132D05D31c914a87C6611C10748AEb04B58e8F',
+      decimals: 18,
+      symbol: 'USDT',
+      name: 'Tether USD',
+    };
+  }
+
   /**
    * Get USDT token info by chain id
    * @param chainId The chain id
