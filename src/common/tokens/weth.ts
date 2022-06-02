@@ -82,6 +82,8 @@ export class WETH {
         return this.GORLI();
       case ChainId.KOVAN:
         return this.KOVAN();
+      case ChainId.POLYGON:
+        return this.POLYGON();
       default:
         throw new SushiswapError(
           `${chainId} is not allowed`,

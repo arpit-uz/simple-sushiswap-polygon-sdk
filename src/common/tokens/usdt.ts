@@ -34,6 +34,8 @@ export class USDT {
     switch (chainId) {
       case ChainId.MAINNET:
         return this.MAINNET();
+      case ChainId.POLYGON:
+        return this.POLYGON();
       default:
         throw new SushiswapError(
           `${chainId} is not allowed`,

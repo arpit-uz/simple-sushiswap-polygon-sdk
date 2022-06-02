@@ -1,6 +1,6 @@
 {
-  "name": "simple-sushiswap-polygon-sdk",
-  "version": "0.0.1-beta",
+  "name": "simple-sushiswap-polygon-sdk-v2",
+  "version": "0.0.2-beta",
   "description": "Simple easy to understand SDK for sushiswap",
   "main": "dist/index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshstevens19/simple-sushiswap-sdk.git"
+    "url": "git+https://github.com/arpit-uz/simple-sushiswap-polygon-sdk"
   },
   "author": "",
   "license": "ISC",
@@ -24,9 +24,9 @@
     "sushiswap"
   ],
   "bugs": {
-    "url": "https://github.com/joshstevens19/simple-sushiswap-sdk/issues"
+    "url": "https://github.com/arpit-uz/simple-sushiswap-polygon-sdk/issues"
   },
-  "homepage": "https://github.com/joshstevens19/simple-sushiswap-sdk#readme",
+  "homepage": "https://github.com/arpit-uz/simple-sushiswap-polygon-sdk#readme",
   "dependencies": {
     "bignumber.js": "^9.0.1",
     "ethereum-multicall": "^2.0.1",
