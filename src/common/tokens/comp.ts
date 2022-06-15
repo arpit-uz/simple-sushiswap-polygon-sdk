@@ -25,7 +25,17 @@ export class COMP {
       name: 'Compound',
     };
   }
-  
+
+  public static BSC() {
+    return {
+      chainId: ChainId.BSC,
+      contractAddress: '0x52CE071Bd9b1C4B00A0b92D298c512478CaD67e8',
+      decimals: 18,
+      symbol: 'COMP',
+      name: 'Compound',
+    };
+  }
+
   /**
    * Get COMP token info by chain id
    * @param chainId The chain id
@@ -36,7 +46,9 @@ export class COMP {
         return this.MAINNET();
       case ChainId.POLYGON:
         return this.POLYGON();
-      default:
+      case ChainId.BSC:
+        return this.BSC();
+        default:
         throw new SushiswapError(
           `${chainId} is not allowed`,
           ErrorCodes.tokenChainIdContractDoesNotExist

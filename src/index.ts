@@ -23,3 +23,4 @@ export { AllowanceAndBalanceOf } from './factories/token/models/allowance-balanc
 export { Token } from './factories/token/models/token';
 export { TokenFactoryPublic } from './factories/token/token.factory.public';
 export { TokensFactoryPublic } from './factories/token/tokens.factory.public';
+

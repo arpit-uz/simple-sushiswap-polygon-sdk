@@ -39,7 +39,7 @@ const routeTest = async () => {
 
     console.log(new Date().getTime());
   } catch (error) {
-    console.log(error.message);
+    console.log(error);
   }
 
   process.stdin.resume();

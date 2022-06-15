@@ -4,7 +4,8 @@ export enum ChainId {
   RINKEBY = 4,
   GÖRLI = 5,
   KOVAN = 42,
-  POLYGON = 137
+  POLYGON = 137,
+  BSC = 56
 }
 
 export const ChainNames = new Map<number, string>([
@@ -14,4 +15,5 @@ export const ChainNames = new Map<number, string>([
   [ChainId.GÖRLI, 'görli'],
   [ChainId.KOVAN, 'kovan'],
   [ChainId.POLYGON, 'polygon'],
+  [ChainId.BSC, 'bsc'],
 ]);

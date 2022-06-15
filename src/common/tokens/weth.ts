@@ -66,6 +66,17 @@ export class WETH {
       name: 'Wrapped Ether',
     };
   }
+
+  public static BSC() {
+    return {
+      chainId: ChainId.BSC,
+      contractAddress: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+      decimals: 18,
+      symbol: 'WBNB',
+      name: 'Wrapped BNB',
+    };
+  }
+
   /**
    * Get WETH token info by chain id
    * @param chainId The chain id
@@ -84,7 +95,9 @@ export class WETH {
         return this.KOVAN();
       case ChainId.POLYGON:
         return this.POLYGON();
-      default:
+      case ChainId.BSC:
+        return this.BSC();
+        default:
         throw new SushiswapError(
           `${chainId} is not allowed`,
           ErrorCodes.tokenChainIdContractDoesNotExist
